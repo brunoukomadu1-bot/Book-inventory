@@ -1,0 +1,75 @@
+tr[class="read"] {
+background-image: linear-gradient(green, yellow)
+}
+
+tr[class="to-read"]{
+  background-image: linear-gradient(blue,red)
+}
+
+tr[class="in-progress"]{
+  background-image: linear-gradient(yellow,green)
+}
+
+span{
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"]{
+  border: 30px;
+  background-image: linear-gradient(yellow,green);
+}
+
+tr[class="read"] span[class="status"]{
+  border: 30px;
+  background-image: linear-gradient(blue,red)
+}
+
+tr[class="in-progress"] span[class="status"]{
+    border: 2px;
+    background-image: linear-gradient(to right, rgb(98, 210, 245), rgb(116, 186, 10));
+}
+
+span[class="status"],
+span[class^="rate"]{
+    height: 20px;
+    width: 80px;
+    padding: 5px;
+}
+
+span[class^="rate"]>span{
+  border: 1px;
+  border-radius: 1px;
+  margin: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+}
+
+
+span[class^="one"]>span:first-child{
+    background-image: linear-gradient(to right, blue,green);
+}
+
+span[class^="one"]>span:first-child{
+    background-image: linear-gradient(to right, blue,green);
+}
+
+span[class="three"] span{
+    background-image: linear-gradient(to right, orange, rgb(8, 156, 156));
+}
+
+span[class="two"]>span:nth-child(-n+2){
+    background-image: linear-gradient(to right, blue,green);
+}
+
+span[class~="one"]>span:first-child{
+  background-image: linear-gradient(green,red)
+}
+
+span[class~="two"]>span:nth-child(-n+2){
+  background-image: linear-gradient(red, blue)
+}
+
+span[class~="three"] span{
+  background-image: linear-gradient(blue,lightblue)
+}
